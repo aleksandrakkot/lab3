@@ -91,7 +91,7 @@ Matrix Matrix::multiply(Matrix m2)
 {
 	if (n != m2.rows())
 	{
-		cout << "Nie ma mozliwosci mno¿enia. Macierze nie pasuja do siebie" << endl;
+		cout << "Nie ma mozliwosci mnoÂ¿enia. Macierze nie pasuja do siebie" << endl;
 		return 1;
 	}
 
@@ -100,7 +100,7 @@ Matrix Matrix::multiply(Matrix m2)
 	{
 		for (size_t j = 0; j < m2.rows(); j++)
 		{
-			double mnozenie = 1;
+			double mnozenie = 0;
 			for (int k = 0; k < m; k++)
 			{
 				mnozenie += macierz[i][k] * m2.get(k,j);
